@@ -1,0 +1,81 @@
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/border"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Fotografía del producto -->
+        <ImageView
+            android:id="@+id/imgProductoDestacado"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:contentDescription="Imagen del producto"
+            android:scaleType="centerInside"
+            android:src="@drawable/proteina_whey" />
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/tvNombreDestacado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="2"
+            android:text="Nombre del producto"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Categoría -->
+        <TextView
+            android:id="@+id/tvCategoriaDestacado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Categoría"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/tvPrecioDestacado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="$0"
+            android:textColor="@color/green_dark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Botón para abrir el producto -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerProductoDestacado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="Ver producto"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

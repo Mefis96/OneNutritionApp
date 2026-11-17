@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "22024216637",
+    "project_id": "onenutrition-cbef0",
+    "storage_bucket": "onenutrition-cbef0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22024216637:android:976edb454e46eef178ca54",
+        "android_client_info": {
+          "package_name": "com.example.onenutrition"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6BY3inVkb7dk4FxGT-6JVTkjRtdEpcus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

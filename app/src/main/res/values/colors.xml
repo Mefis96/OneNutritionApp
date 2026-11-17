@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores principales de OneNutrition -->
+    <color name="green_primary">#16A34A</color>
+    <color name="green_dark">#15803D</color>
+    <color name="green_light">#DCFCE7</color>
+
+    <!-- Colores neutros -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Textos -->
+    <color name="text_primary">#18181B</color>
+    <color name="text_secondary">#71717A</color>
+
+    <!-- Fondos -->
+    <color name="background">#FFFFFF</color>
+    <color name="background_secondary">#F4F4F5</color>
+
+    <!-- Bordes -->
+    <color name="border">#E4E4E7</color>
+
+    <!-- Estados -->
+    <color name="success">#16A34A</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#DC2626</color>
+
+</resources>

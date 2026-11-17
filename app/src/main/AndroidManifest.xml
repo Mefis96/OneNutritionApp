@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permite consultar la ubicación aproximada -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Permite consultar la ubicación precisa -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".OneNutritionApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OneNutrition">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <!-- Splash -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name=".auth.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Recuperar contraseña -->
+        <activity
+            android:name=".auth.RecuperarPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Registro -->
+        <activity
+            android:name=".auth.RegistroActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Comprador -->
+        <activity
+            android:name=".comprador.CompradorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Administrador -->
+        <activity
+            android:name=".administrador.AdministradorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- VENDEDOR - -->
+        <activity
+            android:name=".vendedor.VendedorActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pedidos vendedor -->
+        <activity
+            android:name=".vendedor.PedidosVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Detalle pedido vendedor -->
+        <activity
+            android:name=".vendedor.DetallePedidoVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Catálogo -->
+        <activity
+            android:name=".comprador.CatalogoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Detalle producto -->
+        <activity
+            android:name=".comprador.DetalleProductoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Carrito -->
+        <activity
+            android:name=".comprador.CarritoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Dirección de entrega -->
+        <activity
+            android:name=".comprador.DireccionEntregaActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Metodo de pago -->
+        <activity
+            android:name=".comprador.MetodoPagoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Pasarela de pago -->
+        <activity
+            android:name=".comprador.PasarelaPagoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Confirmación del pedido -->
+        <activity
+            android:name=".comprador.ConfirmacionPedidoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Mis pedidos -->
+        <activity
+            android:name=".comprador.MisPedidosActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Perfil comprador -->
+        <activity
+            android:name=".comprador.PerfilCompradorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Editar perfil comprador -->
+        <activity
+            android:name=".comprador.EditarPerfilActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Lista de Productos Vendedor -->
+        <activity
+            android:name=".vendedor.ProductosVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Crear productos Vendedor -->
+        <activity
+            android:name=".vendedor.CrearProductoVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Editar productos vendedor -->
+        <activity
+            android:name=".vendedor.EditarProductoVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Perfil vendedor -->
+        <activity
+            android:name=".vendedor.PerfilVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Editar Perfil vendedor -->
+        <activity
+            android:name=".vendedor.EditarPerfilVendedorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Lista de productos administrador -->
+        <activity
+            android:name=".administrador.ProductosAdministradorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Gestion d eusuarios administrador -->
+        <activity
+            android:name=".administrador.UsuariosAdministradorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Repporte de ventas administrador -->
+        <activity
+            android:name=".administrador.ReporteVentasActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Editar perfil  administrador -->
+        <activity
+            android:name=".administrador.EditarPerfilAdministradorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Desbloqueo biometrico en segundo plano -->
+        <activity
+            android:name=".auth.DesbloqueoBiometricoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>
